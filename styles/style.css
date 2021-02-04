@@ -1,55 +1,305 @@
-body {
-  background-color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.hrlist {
-  text-align: center;
-}
-
-.hrlist > li {
-  display: inline;
-  margin-right: 10px;
-  border: 1px solid #cc00ff80;
-  padding: 3px;
-  font-size: large;
-}
-.lowheader {
-  background-color: #cc00ff50;
-  margin: 1px;
-  padding: 10px;
-}
-
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
 h1,
 h2,
-h4 {
-  text-align: center;
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* ------------ */
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.img {
-  text-align: center;
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.menu {
+    text-align: center;
+    font-size: 0;
+    margin: 20px 0 0 0;
+}
+
+.menu > li {
+    display: inline;
+    margin-right: 20px;
+    padding: 3px;
+    font-size: large;
+}
+
+.logo {
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.logo:hover {
+    box-shadow: 0 0 10px #1e0124;
+}
+
+.logo:active {
+    color: #58bee4;
+}
+.link2:visited {
+    color: #e941ab;
+}
+
+.lowheader {
+    background-color: #f8c5f7;
+    padding: 10px;
+    height: 100px;
+}
+
+.header-instagtam {
+    margin: 5px 0 20px 80%;
+    display: inline-block;
+}
+
+.main {
+    margin: 170px 5%;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.block-img > li {
+    display: inline-block;
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 222px;
+    font-size: 50px;
+    text-align: center;
+    padding: 45% 0 0 0;
+    background-color: #1c1b1b;
+    opacity: 0;
+    box-sizing: border-box;
+}
+
+figcaption:hover {
+    opacity: 0.7;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+.block-img {
+    text-align: center;
+    margin: 20px;
 }
 
 .services {
-  background-color: #cc00ff20;
-  margin: 0px;
-  padding: 50px;
+    background-color: #cc00ff20;
+    margin: 0px;
+    padding: 50px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.list {
+    margin-top: 20px;
+}
+
+.list li {
+    position: relative;
+    padding: 10px 0px 0px 50px;
+}
+
+.list li::before {
+    content: '';
+    background: url(../images/li.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    z-index: 5;
+}
+
+.img-face {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    width: 300px;
+}
+
+.perfect {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 30px;
+    z-index: 2;
+    background-color: #ffffff50;
+    padding: 20px 0;
 }
 
 .information {
-  padding: 50px;
+    padding: 50px;
 }
 
 .information > h3 {
-  color: #33063d;
+    color: #33063d;
 }
 
 .information > p {
-  color: #42114d;
+    color: #42114d;
+}
+
+.par-service {
+    margin: 20px;
+    min-height: 400px;
+    width: 100%;
+    background: url(../images/par-service.PNG) right / contain no-repeat;
+}
+
+.text {
+    width: 60%;
+    text-align: left;
+    font-size: 14px;
+    line-height: 25px;
 }
 
 footer {
-  text-align: center;
-  background-color: #cc00ff30;
-  margin: 1px;
-  padding: 10px;
+    text-align: center;
+    background-color: #cc00ff30;
+    margin: 1px;
+    padding: 10px;
 }
